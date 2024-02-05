@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.sersun.tfcc.tfcc.SettingsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Introduce consumul specific pentru 1 KM." />
+    <TextField fx:id="valueField1" promptText="Valoarea 1" />
+    <TextField fx:id="valueField2" promptText="Valoarea 2" />
+    <TextField fx:id="valueField3" promptText="Valoarea 3" />
+    <TextField fx:id="valueField4" promptText="Valoarea 4" />
+    <TextField fx:id="valueField5" promptText="Valoarea 5" />
+    <TextField fx:id="valueField6" promptText="Valoarea 6" />
+    <TextField fx:id="valueField7" promptText="Valoarea 7" />
+    <TextField fx:id="valueField8" promptText="Valoarea 8" />
+    <Button onAction="#handleSubmit" text="Salvează" textFill="#01b939" textOverrun="CLIP" />
+</VBox>

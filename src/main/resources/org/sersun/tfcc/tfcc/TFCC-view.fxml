@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sersun.tfcc.tfcc.TFCCController">
+   <children>
+      <MenuBar layoutX="6.0" layoutY="1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Setting"
+                            fx:id="settingMenuItem"
+                            onAction="#handleSettingAction"
+                  />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="TotalDistanceField" layoutX="220.0" layoutY="63.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="ChargetDistanceField" layoutX="220.0" layoutY="105.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="WeightField" layoutX="220.0" layoutY="150.0" prefHeight="25.0" prefWidth="193.0" />
+      <ListView layoutX="433.0" layoutY="18.0" prefHeight="200.0" prefWidth="200.0"
+                fx:id="CoeficientListView"
+      />
+      <Label layoutX="15.0" layoutY="67.0" text="Distanța parcursă (Total), KM" />
+      <Label layoutX="15.0" layoutY="109.0" text="Distanța parcursă cu încărcătură, KM" />
+      <Label layoutX="15.0" layoutY="154.0" text="Greutatea încărcăturii, Tone" />
+            <Button fx:id="CalculateBtn" layoutX="220.0" layoutY="238.0" mnemonicParsing="false" onKeyPressed="#Calculate" onMouseClicked="#Calculate" prefHeight="25.0" prefWidth="85.0" text="Calculează" textFill="#00b40c" />
+            <Button fx:id="ClearBtn" layoutX="330.0" layoutY="238.0" mnemonicParsing="false" onKeyPressed="#ClearForm" onMouseClicked="#ClearForm" prefHeight="25.0" prefWidth="85.0" text="Curăță forma" textFill="#ef0404" />
+      <Label layoutX="15.0" layoutY="300.0" text="Tono-Kilometri: " />
+      <Label layoutX="16.0" layoutY="346.0" text="Motorina consumată (tone): " />
+      <TextField fx:id="tonoKmField" editable="false" layoutX="220.0" layoutY="296.0" onMouseClicked="#copyTonoKmToClipboard" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="ConsumField" editable="false" layoutX="220.0" layoutY="342.0" onMouseClicked="#copyConsumToClipboard" prefHeight="25.0" prefWidth="193.0" />
+   </children>
+</Pane>
