@@ -68,11 +68,8 @@ public class TFCCController {
 
     public void initialize() {
         // Assuming your image path is correct and accessible
-        //Image image = new Image(getClass().getResourceAsStream("/org/sersun/tfcc/tfcc/classic-american-truck-600nw-1152318527.png"));
-        //imageView.setImage(image);
-        // Populate the list
-        //listItems.addAll("0.395", "0.375", "0.550", "0.650",
-         //       "0.00", "0.00", "0.00", "0.00");
+        Image image = new Image(getClass().getResourceAsStream("/org/sersun/tfcc/tfcc/classic-american-truck-600nw-1152318527.png"));
+        imageView.setImage(image);
 
         // Bind the ObservableList to the ListView
         List<String> loadedData = loadData();
